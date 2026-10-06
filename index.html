@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function searchNews() {
+    let search = document.getElementById("searchInput").value.toLowerCase();
+
+    if (search === "india") {
+        document.getElementById("india").scrollIntoView();
+    } 
+    else if (search === "technology") {
+        document.getElementById("technology").scrollIntoView();
+    } 
+    else if (search === "sports") {
+        document.getElementById("sports").scrollIntoView();
+    } 
+    else {
+        alert("News not found!");
+    }
+}
+</script>
+<body>
+
+    <header>
+        <h1>📰 My News Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#india">India</a>
+        <a href="#technology">Technology</a>
+        <a href="#sports">Sports</a>
+        <div class="search">
+    <input type="text" placeholder="Search News">
+    <button>Search</button>
+</div>
+    </nav>
+
+    <h2>🔥 Latest News</h2>
+
+    <div class="news" id="india">
+        <h3>🇮🇳 India News</h3>
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="India News">
+        <p>India latest news and important updates.</p>
+        <button onclick="alert('India News clicked!')">Read More</button>
+    </div>
+
+    <div class="news" id="technology">
+        <h3>💻 Technology News</h3>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology News">
+        <p>Latest technology and computer news.</p>
+        <button onclick="alert('Technology News clicked!')">Read More</button>
+    </div>
+
+    <div class="news" id="sports">
+        <h3>⚽ Sports News</h3>
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211" alt="Sports News">
+        <p>Latest sports news and updates.</p>
+        <button onclick="alert('Sports News clicked!')">Read More</button>
+    </div>
+
+    <footer>
+        <p>© 2026 My News Website</p>
+    </footer>
+
+</body>
+</html>
